@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# Defining the Caesar Cipher functions
+# Defining the functions
 letters = 'abcdefghijklmnopqrstuvwxyz'
 
 def encrypt(plaintext, shift_value):
@@ -67,7 +67,7 @@ tk.Label(frame, text="Enter Shift Key (1 to 26):").grid(row=1, column=0, sticky=
 key_input = tk.Entry(frame)
 key_input.grid(row=1, column=1)
 
-# Buttons for encryption and decryption
+# Buttons
 encrypt_button = tk.Button(frame, text="Encrypt", command=encrypt_text)
 encrypt_button.grid(row=2, column=1, pady=5)
 
